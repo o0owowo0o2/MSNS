@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+#navbars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222222;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* 타이틀 */
+.nav-title{
+  font-weight: bold;
+  
+  img{
+    height: 40px;
+  }
+}
+
+/* 메뉴 */
+.nav-item {
+  margin: 0 25px;
+}
+
+/* 하위메뉴 */
+.nav-dropdown a:active{
+  background-color: #bdbdbd;
+}
+
+/* 링크 텍스트 색상 */
+#navbars .navbar-brand, #navbars .nav-link, #navbars .nav-dropdown {
+  color: #222222; 
+}
+/* 링크 텍스트 호버 색상 */
+#navbars .navbar-brand:hover, #navbars .nav-link:hover,#navbars .nav-dropdown:hover {
+  color: #999999;
+}
+
+.navbars_icon img {
+  margin: 5px;
+  margin-top: 13px;
+  padding-bottom: 10px;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 992px) {
+  #navbars .navbar-collapse {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbars_icon {
+    margin-top: 3px;
+    margin-right: 10px;
+    float: right;
+  }
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+#qna-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    padding-top: 85px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+
+    h2, h3 {
+        margin: 10px 0;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 6px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* 검색창 */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #5e5e5e;
+}
+
+.search-bar input:focus {
+    outline:none;
+}
+
+
+
+
+.post-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.span-header{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #333333;
+    border-radius: 5px;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 10px;
+    /* background-color: #fff; */
+    margin-bottom: 10px;
+}
+
+.post-item:hover {
+    background-color: #f1f1f1;
+}
+
+.post-link {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.post-link span {
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
+
+/* 검색&글쓰기 버튼 */
+.buttons {
+    display: flex;
+    /* width: 100%; */
+}
+
+.buttons button {
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+.buttons button:hover {
+    background-color: #5e5e5e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons-a{
+    display: flex;
+}
+
+.buttons-a a {
+    
+    text-decoration: none;
+    color: #333333;
+    border: 0.5px solid #333333;
+    padding: 5px 10px;
+    margin-left: 3px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons-a a:hover {
+    background-color: #d8d8d8;
+}

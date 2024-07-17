@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+#footer {
+    position: relative;
+    bottom: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-optical-sizing: auto;
+    background-color: #f8f9fa;
+    margin-top: 300px; /* Footer 위에 여백 */
+}
+
+.footer-link {
+    padding: 30px;
+    padding-bottom: 5px;
+}
+.footer-link a {
+    padding-right: 28px;
+    text-decoration: none;
+    color: black;
+}
+.footer-link span {
+    padding-right: 40px;
+    /* color: #999999; */
+}
+
+
+.footer-copyright{
+    padding: 30px;
+    padding-right: 40px;
+    color: #999999;
+}
+.footer-copyright span {
+    padding-right: 31px;
+}
+.copyright{
+    font-size: 12px;
+    color: #555555;
+}
+
+@media (max-width: 992px) {
+    #footer {
+        text-align: center;
+    }
+    .footer-link span{
+       display: none;
+    }
+    .footer-copyright span {
+        padding-right: 10px;
+    }
+}
