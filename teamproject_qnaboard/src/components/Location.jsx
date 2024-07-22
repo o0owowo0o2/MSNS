@@ -43,9 +43,17 @@ function Location() {
     return (
         <Container>
             <div className='divcss'>
-                <p>찾아오시는 길</p>
-                <hr />
+                <div className='main-title'>
+                    <br />
+                    <h1>찾아오시는 길</h1>
+                    <br />
+                    <p>경기도 성남시 분당구 구미1동 성남대로 38 2층<br />
+                    수인분당선, 신분당선
+                    </p>
+                </div>
+                <br /><hr />        
                 <div id="map" style={{width:'100', height:'400px'}}></div>
+                <a href="">카카오지도로 보기</a>
                 <p>
                     <Link to="/main">Main</Link>
                 </p>

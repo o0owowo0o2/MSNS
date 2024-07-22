@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+#qnaPostCreate{
+        padding-top: 85px;
+
+    p{
+        margin-top : 0px;
+        margin-bottom : 0px;       
+    }
+
+    hr{
+        margin-top : 5px;
+        margin-bottom : 15px
+    }
+    .goToPostList{
+        font-size: 14px;
+        text-decoration: none;
+        color: #333333;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+.create-title{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.create-title input{
+    width: 180%;
+    font-size: 22px;
+    padding: 0px 0px 4px 8px;
+    border-width: 0.5px;
+    border-radius: 5px;
+}
+
+
+/* 등록&취소 버튼  */
+.create-buttons{
+    float: right; 
+    margin-right: 15px;
+}
+.create-buttons button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+.create-reset:hover{
+    color: #fff;
+    background-color: #ff3b3b;
+    transition: 200ms;
+}
+.create-submit:hover{
+    color: #fff;
+    background-color: #999999;
+    transition: 200ms;
+}
+
+
+/* 파일선택 */
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+.filebox label{
+    margin-left: 8px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.filebox label:hover{
+    color: #fff;
+    background-color: #0d6efe;
+    transition: 200ms;
+}
+
+
+
+.create-contant{
+    margin-top: 40px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+}
+
+.create-contant textarea{
+    margin-top: 5px;
+    overflow: hidden; 
+    resize: none;
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+@media (max-width: 767px) {
+    #qnaPostCreate{
+
+        .create-title input{
+            width: 150%;
+            font-size: 22px;
+            padding: 0px 20% 4px 6px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #qnaPostCreate{
+
+            .create-title input{
+                font-size: 16px;
+                width: 160%;
+                padding: 3px 0px 6px 4px;
+            }
+            .create-title-buttons button{
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                margin-left: 3px;
+    
+            }
+
+        }
+    }
+}

@@ -1,18 +1,32 @@
 import React from 'react';
 import '../css/pagination.css';
-// 현재 페이지 번호(currentPage), 전체 페이지 수(totalPages), 페이지 번호를 변경할 때 호출되는 함수(paginate)
 
 const Pagination = ({ currentPage, totalPages, paginate }) => {
+    // 페이지 번호 배열 생성
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(i);
+    }
 
     return (
         <div className='paging_button'>
-            <button onClick={() => paginate(1)} disabled={currentPage <= 1} >
+            <button onClick={() => paginate(1)} disabled={currentPage <= 1}>
                 <img src="../icons/chevrons_left_icon.svg" alt="<<" />
             </button>
-            <button onClick={() => paginate(currentPage - 1)} disabled={currentPage <= 1} >
+            <button onClick={() => paginate(currentPage - 1)} disabled={currentPage <= 1}>
                 <img src="../icons/left_icon.svg" alt="<" />
             </button>
-            <span>페이지 {currentPage}/{totalPages}</span>
+            <span>
+                {pageNumbers.map(number => (
+                    <button 
+                        key={number} 
+                        onClick={() => paginate(number)} 
+                        className={number === currentPage ? 'active' : ''}
+                    >
+                        {number}
+                    </button>
+                ))}
+            </span>
             <button onClick={() => paginate(currentPage + 1)} disabled={currentPage >= totalPages}>
                 <img src="../icons/right_icon.svg" alt=">" />
             </button>

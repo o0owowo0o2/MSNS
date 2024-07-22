@@ -3,9 +3,15 @@
 /* https://noonnu.cc/font_page/34 */
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 
-p{
+*{
     font-family: "Noto Sans KR", sans-serif;
-    font-optical-sizing: auto;
+    /* font-optical-sizing: auto; */
+}
+
+.app{
+    display : flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .divcss{

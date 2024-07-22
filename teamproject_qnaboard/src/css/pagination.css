@@ -10,3 +10,8 @@
 button:disabled{
     visibility: hidden;
 }
+
+.paging_button button.active {
+    text-decoration: underline;
+    font-weight: bold;
+}

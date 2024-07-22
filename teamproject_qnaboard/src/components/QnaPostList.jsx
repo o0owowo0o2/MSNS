@@ -52,11 +52,13 @@ function QnaPostList() {
     return (
         <Container>
             <div id='qna-container'>
-                <h2>QnA 게시판</h2>
-                <p>고객님들의 질문 및 문의사항을 알려주시면, 빠르게 확인 후 답변해 드립니다.<br />
-                    많은 분들이 문의하신 질문은 <Link to="/qna">자주 묻는 질문</Link> 페이지에 안내되어 있습니다.
+                <br />
+                <h1>QnA 게시판</h1>
+                <br />
+                <p>고객님들의 질문 및 문의사항을 남겨주시면, 빠르게 확인 후 답변해 드립니다.<br />
+                    많은 분들이 문의하신 질문은 <Link to="/qna">자주 묻는 질문</Link> 페이지에 안내되어 있으니 참고 부탁드립니다.
                 </p>
-                <br /><br />
+                <br />
                 <div className='search-bar'>
                     <input 
                         type="text" 
@@ -72,23 +74,23 @@ function QnaPostList() {
                     <>
                         <ul className='post-list'>
                             <span className='span-header'>
-                                <span>글번호</span>
-                                <span>제목</span>
-                                <span>작성자</span>
+                                <span className='span-header-1'>번호</span>
+                                <span className='span-header-2'>제목</span>
+                                <span className='span-header-3'>작성자</span>
                             </span>
                             {posts.map(post => (
                                 <li key={post.boardNumber} className='post-item'>
                                     <Link to={`/posts/${post.boardNumber}`} className='post-link'>
-                                        <span>{post.boardNumber} </span>
-                                        <span>{post.boardTitle} </span>
-                                        <span>{post.boardWriter}</span>
+                                        <span className='post-link-1'>{post.boardNumber} </span>
+                                        <span className='post-link-2'>{post.boardTitle} </span>
+                                        <span className='post-link-3'>{post.boardWriter}</span>
                                     </Link>
                                 </li>
                             ))}
                         </ul>
-                    <div className='buttons-a'>
                         <Pagination currentPage={currentPage} totalPages={totalPages} paginate={paginate} />
-                        {/* <Link to="/createQnaPost">글쓰기</Link> */}
+                    <div className='buttons-a'>
+                        <Link to="/createQnaPost">글쓰기</Link>
                     </div>
                     </>
                 )}

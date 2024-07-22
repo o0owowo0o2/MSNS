@@ -26,7 +26,7 @@ function Header() {
             <Navbar expand="lg" className="bg-body-tertiary" id='navbars' expanded={expanded}>
                 <Container>
                     <Navbar.Brand as={Link} to="/main" onClick={handleClose} className='nav-title'>
-                        <img src="../icons/logo.svg" alt="멍쓰냥쓰" />
+                        <img src="../icons/dog_cat_logo.svg" alt="멍쓰냥쓰" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-between'>

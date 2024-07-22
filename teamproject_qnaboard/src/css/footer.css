@@ -10,11 +10,14 @@
     font-size: 14px;
     font-optical-sizing: auto;
     background-color: #f8f9fa;
-    margin-top: 300px; /* Footer 위에 여백 */
+    /* margin-top: 200px;  */
+    margin-top: auto;
+    /* Footer 위에 여백 */
 }
 
 .footer-link {
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
     padding-bottom: 5px;
 }
 .footer-link a {
@@ -25,6 +28,10 @@
 .footer-link span {
     padding-right: 40px;
     /* color: #999999; */
+}
+.footer-link button {
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -44,11 +51,13 @@
 @media (max-width: 992px) {
     #footer {
         text-align: center;
+        font-size: 12px;
     }
     .footer-link span{
-       display: none;
+        display: none;
     }
     .footer-copyright span {
         padding-right: 10px;
+        font-size: 10px;
     }
 }

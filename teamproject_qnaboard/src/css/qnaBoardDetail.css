@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+#qnaPostDetail{
+        padding-top: 85px;
+
+    p{
+        margin-top : 0px;
+        margin-bottom : 0px;       
+    }
+
+    hr{
+        margin-top : 5px;
+        margin-bottom : 15px
+    }
+
+    img{
+        margin-left: 7%;
+        margin-top: 40px;
+        max-width: 700px;
+        max-height: 700px;
+        width: 50%;
+        height: 50%;
+        border-radius: 5px;
+    }
+
+    .qna-buttons-1{
+        margin-left: auto;
+    }
+
+    .qna-content{
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-bottom: 40px;
+    }
+    .qnaPostDetail-p img{
+        margin: 0;
+        margin-bottom: 4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 15px;
+    }
+    .qnaPostDetail-p a{
+        text-decoration: none;
+        color: #333333;
+    }
+}
+
+
+.qnaPostDetail-title{
+   display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.qnaPostDetail-p{
+    font-size: 14px;
+    color: #333333;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* 버튼 */
+.qna-buttons-1 button, .qna-buttons-2 button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+.qna-buttons-1{
+    .qna-buttons-delete:hover{
+        color: #fff;
+        background-color: #ff3b3b;
+        transition: 200ms;
+    }
+    .qna-buttons-edit:hover{
+        color: #fff;
+        background-color: #999999;
+        transition: 200ms;
+    }
+}
+.qna-buttons-2{
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    
+    button {
+        background-color: #333333;
+        color: #fff;
+    }
+}
+
+
+
+/* 미디어쿼리 이미지 조정 */
+@media (max-width: 767px) {
+    #qnaPostDetail{
+
+        .qna-content{
+            margin-top: -34px;
+            margin-bottom: 30px;
+            margin-right: 36px;
+            margin-left: 36px;
+        }
+
+        .qnaPostDetail-content img{
+            margin: auto;
+            margin-top: 50px;
+            display: block;
+            max-width: 500px;
+            max-height: 500px;
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+

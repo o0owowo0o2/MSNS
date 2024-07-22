@@ -8,13 +8,13 @@ function Footer() {
         <div id='footer'>
             <Container>
                 <div className='footer-link'>
-                    <Link to="/이용약관">이용약관</Link>
+                    <button><Link to="/이용약관">이용약관</Link></button>
                     <span>｜</span>
-                    <Link to="/개인정보 처리방침">개인정보 처리방침</Link>
+                    <button><Link to="/개인정보 처리방침">개인정보 처리방침</Link></button>
                     <span>｜</span>
-                    <Link to="/이용안내">이용안내</Link>
+                    <button><Link to="/이용안내">이용안내</Link></button>
                     <span>｜</span>
-                    <Link to="/고객지원센터">고객지원센터</Link>
+                    <button><Link to="/고객지원센터">고객지원센터</Link></button>
                 </div>
                 <div className='footer-copyright'>
                     <span>(주)멍쓰냥쓰 대표:장나라</span>
