@@ -1,20 +1,15 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 
 
 function Payment() {
   useEffect(() => {
     const IMP = window.IMP;  // window 객체에서 IMP를 가져옵니다.
-    IMP.init("imp71765085");  // IMP 객체를 초기화하고 가맹점 식별코드를 설정합니다.
+    IMP.init("imp46746806");  // IMP 객체를 초기화하고 가맹점 식별코드를 설정합니다.
 
     // 페이지가 로드되면 handlePayment 함수를 호출합니다.
     handlePayment();
   }, []);
-
-  const history = useHistory();
-
-
   
   const handlePayment = () => {
     const IMP = window.IMP;  // window 객체에서 IMP를 가져옵니다.
@@ -22,13 +17,13 @@ function Payment() {
       pg: "html5_inicis",  // 결제 PG사 설정
       pay_method: "card",  // 결제 수단 설정
       merchant_uid: `merchant_${new Date().getTime()}`,  // 주문번호 설정
-      name: "Snack",  // 상품 이름
-      amount: 10,  // 결제 금액
-      buyer_email: "star@nate.com",  // 구매자 이메일
-      buyer_name: "장나라",  // 구매자 이름
+      name: "고양이 장난감",  // 상품 이름
+      amount: 10000,  // 결제 금액
+      buyer_email: "csb0012@naver.com",  // 구매자 이메일
+      buyer_name: "최승빈",  // 구매자 이름
       buyer_tel: "010-1234-5678",  // 구매자 전화번호
       buyer_addr: "서울특별시 강남구 역삼동",  // 구매자 주소
-      buyer_postcode: "11111",  // 구매자 우편번호
+      buyer_postcode: "13142",  // 구매자 우편번호
       m_redirect_url: "/paymentSuccess"  // 모바일 결제 후 리디렉션 될 URL
     }, function(rsp) {
       if (rsp.success) {
@@ -50,7 +45,7 @@ function Payment() {
           console.log('결제 정보가 서버로 성공적으로 전송되었습니다.', response.data);
           // 성공 후 완료 팝업을 띄우고 페이지 이동
           alert('결제가 완료되었습니다.');
-         history.push('/paymentSuccess'); // 결제 성공 후 성공페이지
+          window.location.href = "http://localhost:3000/";  // 결제 성공 후 메인 페이지로 리디렉션
         }).catch(error => {
           console.error('결제 정보 전송 에러', error);  // 에러 시 콘솔에 오류를 출력
         });

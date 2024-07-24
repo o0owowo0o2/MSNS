@@ -2,21 +2,18 @@
 
 
 
-/* *{margin: 0;padding: 0; font-size: 14px;line-height: 1.9;}
-
-ul {list-style: none;} */
 
 
-
-.inner {width: 1000px; margin: 0 auto;  font-size: 40px;
-
-    *{margin: 0;padding: 0; font-size: 14px;line-height: 1.9;}
+*{margin: 0;padding: 0; font-size: 14px;line-height: 1.9;}
 
 ul {list-style: none;}
-}
+
+
+
+.inner {width: 1000px; margin: 0 auto; }
 .inner:after {display: block; content: ""; clear: both;}
 .in{ width: 1000px; margin: 0 auto;}
-.descS {width: 1000px ;margin: 0 auto;text-align: center;}
+.descS {width: 1000px ;margin: 0 auto;text-align: center;margin-top: 100px;}
 .PayTit {font-size: 35px;margin-top: 60px;}
 .payDesc {font-size: 20px;}
 .anotherC {font-size: 20px;color: inherit;}
