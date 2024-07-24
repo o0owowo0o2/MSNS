@@ -17,7 +17,7 @@ function QnaPostList() {
     const fetchPosts = useCallback(async (page = 1, search = '') => {
         setIsLoaded(false);
         try {
-            const response = await axios.get('http://192.168.10.23:9008/api/posts', {
+            const response = await axios.get('http://localhost:9008/api/posts', {
                 params: {
                     page: page - 1,
                     size: postsPerPage,

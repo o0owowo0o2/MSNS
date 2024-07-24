@@ -62,7 +62,7 @@ function QnaPostEdit() {
         formData.append('post', JSON.stringify(post));
 
         try {
-            await axios.put(`http://192.168.10.23:9008/api/posts/update/${boardNumber}`,
+            await axios.put(`http://hocalhost:9008/api/posts/update/${boardNumber}`,
                 formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'

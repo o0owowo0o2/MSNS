@@ -14,7 +14,7 @@ function QnaPostDetail() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await axios.get(`http://192.168.10.23:9008/api/posts/${boardNumber}`);
+                const response = await axios.get(`http://hocalhost/api/posts/${boardNumber}`);
                 setPost(response.data);
             } catch (error) {
                 console.error("Error fetching post details:", error);
@@ -30,7 +30,7 @@ function QnaPostDetail() {
     const handleDelete = async (boardNumber) => {
         if (window.confirm("게시글을 삭제하시겠습니까?")) {
             try {
-                await axios.delete(`http://192.168.10.23:9008/api/posts/${boardNumber}`);
+                await axios.delete(`http://localhost:9008/api/posts/${boardNumber}`);
                 alert('게시글이 삭제되었습니다');
                 history.push('/qnaPostList');
             } catch (error) {
