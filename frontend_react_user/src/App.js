@@ -11,7 +11,6 @@ import Qna from './components/Qna';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CreateQnaPost from './components/CreateQnaPost';
-import './css/component.css';
 
 import CommunityList from './components/CommunityList';
 import CommunityDetail from './components/CommunityDetail';
@@ -48,6 +47,8 @@ import CreateNotice from './components/CreateNotice';
 import NoticeDetail from './components/NoticeDetail';
 import NoticeList from './components/NoticeList';
 import DeleteRegister from './components/DeleteRegister';
+
+import './css/component.css';
 
 const App = () => {
   const location = useLocation();

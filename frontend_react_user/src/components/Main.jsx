@@ -23,24 +23,20 @@ function Main() {
         <div id='main'>
             <div className='main-banner'>
                 <Slider {...settings}>
-                    <div className="slide">
-                        <Link to="/메인배너1">
-                            <picture>
-                                <source media="(max-width: 700px)" srcSet="images/main-banner-700.png" />
-                                <source media="(max-width: 1500px)" srcSet="images/main-banner-1200.png" />
-                                <img src="images/main-banner-full.png" alt="메인배너1" />
-                            </picture>
-                        </Link>
-                    </div>
-                    <div className="slide">
-                        <Link to="/메인배너2">
-                            <picture>
-                                <source media="(max-width: 700px)" srcSet="images/main-banner-700-2.png" />
-                                <source media="(max-width: 1500px)" srcSet="images/main-banner-1200-2.png" />
-                                <img src="images/main-banner-full-2.png" alt="메인배너2" />
-                            </picture>
-                        </Link>
-                    </div>
+                    <Link to="/메인배너1">
+                        <picture>
+                            <source media="(max-width: 700px)" srcSet="images/main-banner-700.png" />
+                            <source media="(max-width: 1500px)" srcSet="images/main-banner-1200.png" />
+                            <img src="images/main-banner-full.png" alt="메인배너1" />
+                        </picture>
+                    </Link>
+                    <Link to="/메인배너2">
+                        <picture>
+                            <source media="(max-width: 700px)" srcSet="images/main-banner-700-2.png" />
+                            <source media="(max-width: 1500px)" srcSet="images/main-banner-1200-2.png" />
+                            <img src="images/main-banner-full-2.png" alt="메인배너2" />
+                        </picture>
+                    </Link>
                 </Slider>
             </div>
             <Container>
