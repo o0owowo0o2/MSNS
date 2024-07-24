@@ -1,0 +1,97 @@
+@charset "utf-8";
+  
+  .divcss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    
+  }
+  /* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+  .register-form {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #fffcf6;
+    padding: 20px;
+    padding-top: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+
+  .image-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .text-form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0px ;
+    gap: 10px;
+  }
+  .text-form label{
+    float: left;
+  }
+  .text-form input{
+    float: right;
+  }
+  .address-field {
+    display: flex;
+    align-items: center;
+  }  
+  .address-field input {
+    flex-grow: 1;
+  }
+  
+  .identity1{
+    margin-inline: 10px;
+  }
+
+  button {
+    padding: 5px 10px;
+    background-color: #c0bfc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e5a476;
+  }
+  .addrInput{
+    margin-right: 5px;
+  }
+  .main-button {
+    margin-top: 20px;
+  }
+  .subButton{
+    margin-right: 5px;
+  }
+  @media (max-width:350px) {
+    .register-form {
+      display: none;
+      text-align: center;
+      padding: 5px 1px 5px;
+    }
+  }

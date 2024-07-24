@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.wrapper{
+    margin: 0 auto;
+    position: absolute;
+    /* left: 500px; */
+    top: 200px;
+  }
+

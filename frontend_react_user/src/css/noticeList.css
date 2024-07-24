@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+h2{
+    text-align: center;
+}
+
+.list{
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    
+}
+
+.title{
+    text-align: left;
+    display: inline-flex;
+    float: left;
+    
+}
+.contents{
+    text-align: center;
+    display: inline-block;
+    float: center;
+}
+.writer{
+    text-align: right;
+    display: inline-block;
+   
+}
+.line{
+    border-bottom: 1px dotted black;
+
+}
+@media (max-width:700px){
+    .list{
+        text-align: center;
+        
+    }
+    
+}

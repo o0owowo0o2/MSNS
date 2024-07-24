@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* https://noonnu.cc/font_page/34 */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+*{
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    padding: 0; 
+    /* font-optical-sizing: auto; */
+}
+
+/* App.js */
+.app{
+    display : flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.divcss{
+    padding-top: 85px;
+}

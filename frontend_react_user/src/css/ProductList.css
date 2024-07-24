@@ -1,0 +1,89 @@
+.product-name-link {
+  text-decoration: none;
+}
+.product-list-container {
+  margin: 0 18%;
+  margin-top: 85px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  flex: 1 0 16%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 4%;
+}
+
+.product-item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+a
+.pagination {
+  margin-top: 20px;
+}
+.search-container{
+  margin: 20px 0px;
+  text-align: right;
+
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.input{
+  margin-right: 5px;
+}
+.add{
+  text-align: right;
+}
+.pagination button.active {
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+.delete {
+  color: #333; /* 기본 색상 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능성을 나타냄 */
+  text-decoration: underline; /* 밑줄 추가 */
+  display: inline-block; /* 인라인 요소로 표시 */
+}
+
+.delete:hover {
+  color: #ff0000; /* 마우스를 올렸을 때 색상 변경 */
+}
+
+/* 빈 항목 숨기기 */
+.product-item.empty {
+  visibility: hidden;
+}
+
+.inputButton{
+  position: sticky;
+  display: block;
+  text-align: right;
+  left: 1000px;
+  font-size: 10px;
+}
+
+.searchButton{
+  margin-right: 5px;
+}

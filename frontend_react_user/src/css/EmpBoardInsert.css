@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Ownglyph_UNZ-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/Ownglyph_UNZ-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.inner {width: 1000px; margin: 0 auto; padding-top: 150px;}
+.inner:after {display: block; content: ""; clear: both;}
+.in{ width: 1000px; margin: 0 auto;}
+.in:after{display: block; content: ""; clear: both;}
+.titWrapper {width: 100%;}
+.brdregit {padding:10px 0 10px}
+.bbs-table-write {margin-top: 10px;
+    padding-top: 13px;
+    border-top: 1px solid black;}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+
+.tableWrap {
+    
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: keep-all;}
+
+.tableWrap tbody th {
+    
+        text-align: center;
+        color: #737475;
+        font-size: 13px; 
+        padding: 13px 0;
+        
+ }  
+
+.ModiCon {text-align: center; padding: 15px 0 10px;display: block;}
+
+ .tableWrap tbody th td {    
+  
+    padding: 13px 0;
+    border: 0 none;
+    color: #9d9d9d;
+    font-weight: normal;
+    padding: 6px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.brdTit {padding: 6px 0;
+    border: 1px solid #e5e5e5;
+   
+    font-weight: normal;
+    font-size: 11px;}
+
+.brdCon{padding: 6px 0;
+    border: 1px solid #e5e5e5;
+   
+    font-weight: normal;
+    font-size: 11px;
+
+}
+
+.brdWri{padding: 6px 0;
+    border: 1px solid #e5e5e5;
+   
+    font-weight: normal;
+    font-size: 11px;}
+
+.bbs-link-btm {margin-top: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+    width: 1000px;
+}
+
+.brdWr {
+
+    width: 1000px;
+    margin: 0 auto;
+    padding: 12px 10px 12px 4px;
+    text-align: center;
+   
+   
+}
+.brdSub {
+    
+    min-width: 100px;
+    margin: 0 0 0 5px;
+    padding: 12px 4px 12px 4px;
+    background: #0B3863;
+    border: 1px solid #0B3863;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;}
+
+.brdCan {
+    min-width: 100px;
+    margin: 0 0 0 5px;
+    padding: 12px 4px 12px 4px;
+    background: #0B3863;
+    border: 1px solid #0B3863;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+}
+
+.bbs-link-btm {margin-top: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    text-align: center;}
+
+

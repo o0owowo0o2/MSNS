@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#paging_button button{
+        margin-left: 2px;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+}
+
+button:disabled{
+    visibility: hidden;
+}
+
+#paging_button button.active {
+    text-decoration: underline;
+    font-weight: bold;
+}

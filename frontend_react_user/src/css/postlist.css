@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Ownglyph_UNZ-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/Ownglyph_UNZ-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.inner {width: 1000px; margin: 0 auto; padding-top: 150px;
+    *{margin: 0;padding: 0; font-size: 14px;line-height: 1.9;}
+    
+    ul {list-style: none;}
+    
+}
+.inner:after {display: block; content: ""; clear: both;}
+.in{ width: 1000px; margin: 0 auto;}
+.wrapper {width: 1000px;text-align: center;}
+
+.eBrd {margin: 0 auto;font-size: 35px;margin-bottom: 30px;margin-top: 30px;text-align: center;}
+.brdWrp {margin: 0 auto;text-align: center;}
+.board {border-top:2px solid #292929;border-collapse: collapse;width: 100%;border-spacing: 0;text-align: center;}
+.board th, .board td {text-align:center;vertical-align:center;padding: 15px 30px;}
+.board th[scope="row"]{text-align:left;border-right:1px solid #292929;}
+.board thead tr:nth-child(1) th{height: 20px;}
+.board th:nth-child(1){text-align: center;margin-left: 10px;}
+.board td{padding:25px;text-align:center;}
+.board tr {border-top : 1px solid #d1d1d1;}
+.board tr:last-child{border-bottom:2px solid #292929;}
+.board td:nth-child(1){text-align: left;margin-left: 10px;}
+.board thead th{border-bottom:1px solid #292929}
+
+
+
+.btnWrap {
+    border: 1px solid #ddd;
+    width: 1000px;   
+    margin: 0 auto;
+    padding: 12px 10px 12px 4px;
+    text-align: center;
+   
+}
+
+.funBtn {
+    
+    min-width: 100px;
+   
+   background: #0B3863;
+   border: 1px solid #0B3863;
+   font-weight: 400;
+   color: white;
+   font-size: 16px;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin: 0 auto;}
+

@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+.basicInfo{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    margin: 20px;
+    max-width: 1600px ;
+    padding: 30px 50px 30px;  
+    
+}
+.contectInfo{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    margin: 20px;
+    max-width: 1600px ;
+    padding: 30px 50px 30px;  
+    
+}
+img{
+    text-align: right;
+}
+.profile{
+    text-align: left;
+    padding-bottom: 30px;
+    
+}
+.connect{
+    text-align: left;
+    padding-bottom: 30px;
+}
+.myNum{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.myId{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.name{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.tel{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.addr{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.gender{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.idNum{
+    text-align: left;
+    padding: 10px 30px 10px;
+}
+.value{
+    float: right;
+}
+.line{
+    border-bottom: 1px dotted #ccc;
+}
+.modiButton{
+    margin-right: 5px;
+}
+.mainButton{
+    margin-right: 5px;
+}
+
+@media (max-width: 520px){
+    .totalInfo{
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+    }
