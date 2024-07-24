@@ -67,6 +67,7 @@
     margin-inline: 10px;
   }
 
+.divcss {
   button {
     padding: 5px 10px;
     background-color: #c0bfc0;
@@ -79,6 +80,7 @@
   button:hover {
     background-color: #e5a476;
   }
+}
   .addrInput{
     margin-right: 5px;
   }

@@ -54,35 +54,35 @@ const ProductList = () => {
   const emptySlots = totalSlots - currentProducts.length;
 
   return (
-    <div className="product-list-container">
+    <div className="products-list-container">
       <h1>상품 목록</h1>
         <span className='add'><Link to="/add">상품 추가</Link></span>
-      <div className='search-container'>
+      <div className='searchs-container'>
         <input className='input'
           type="text" 
           placeholder="검색어를 입력하세요" 
           value={searchTerm} 
           onChange={(e) => setSearchTerm(e.target.value)} 
         />
-        <button className='searchButton' onClick={handleSearch}>검색</button>
+        <button className='searchsButton' onClick={handleSearch}>검색</button>
       </div>
-      <div className="product-grid">
+      <div className="products-grid">
         {currentProducts.map((product) => (
-          <div key={product.productNumber} className="product-item">
-            <Link to={`/products/${product.productNumber}`} className="product-name-link">
+          <div key={product.productNumber} className="products-item">
+            <Link to={`/products/${product.productNumber}`} className="products-name-link">
               <h3>[상품이름]</h3> 
               <h4>{product.productName}</h4>
             </Link>
             <p>{product.productDescription}</p>
             <p>판매자: {product.seller}</p>
-            <img src={product.imagePath} alt={product.productName} className="product-image" />
+            <img src={product.imagePath} alt={product.productName} className="products-image" />
 
             <Link to={`/edit/${product.productNumber}`}>수정</Link>
             <div className='delete' onClick={() => handleDeleteProduct(product.productNumber)}>삭제</div>
           </div>
         ))}
         {Array.from({ length: emptySlots }, (_, index) => (
-          <div key={`empty-${index}`} className="product-item empty"></div>
+          <div key={`empty-${index}`} className="products-item empty"></div>
         ))}
       </div>
       <div className="pagination">
